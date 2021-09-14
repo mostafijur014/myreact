@@ -1,5 +1,6 @@
 import ClockList from './components/CkockList';
 import Clocks from './components/Clock';
+import Form from './components/Form';
 
 function App() {
     const quantites = [1, 2, 3, 4, 5];
@@ -14,6 +15,9 @@ function App() {
             </div>
             <div>
                 <ClockList quantites={quantites} />
+            </div>
+            <div>
+                <Form />
             </div>
         </>
     );

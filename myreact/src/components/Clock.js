@@ -47,7 +47,6 @@ class Clocks extends React.Component {
 
     // eslint-disable-next-line class-methods-use-this
     render() {
-        console.log('Clock Components Render');
         const { date, locale } = this.state;
         // let button;
         // if (locale === 'bn-BD') {
@@ -76,6 +75,8 @@ class Clocks extends React.Component {
                 ) : (
                     <Button change={this.handleClick} locale="bn-BD" />
                 )}
+                <br />
+                <br />
             </div>
         );
     }
