@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-undef */
 /* eslint-disable react/no-unescaped-entities */
 import Calculator from './components/Calculator';
 import ClockList from './components/CkockList';
@@ -47,6 +48,14 @@ function App() {
                 <ClickCounter />
                 <HoverCounter />
                 <MouseUp />
+                {/* <User render={(isLoggedIn) => (isLoggedIn ? 'Mr Mostafijur' : 'Guest')} /> 
+                <Counter
+                    render={(counter, incrementCount) => (
+                        <ClickCounter counter={counter} incrementCount={incrementCount} />
+                    )}
+                /> 
+                <Counter />
+                */}
             </div>
         </>
     );
