@@ -1,6 +1,9 @@
+/* eslint-disable no-undef */
 import React from 'react';
 // import withCounter from './HOC/withConter';
-export default class ClickCounter extends React.Component {
+// eslint-disable-next-line react/prefer-stateless-function
+// eslint-disable-next-line no-unused-vars
+export default function ClickCounter({ count, incrementCount }) {
     // state = {
     //     count: 0,
     // };
@@ -9,16 +12,14 @@ export default class ClickCounter extends React.Component {
     //     this.setState((prevState) => ({ count: prevState.count + 1 }));
     // };
 
-    render() {
-        return (
-            <div>
-                <button type="button" onClick={this.incrementCount}>
-                    {' '}
-                    Clicked {this.count} times
-                </button>
-            </div>
-        );
-    }
+    return (
+        <div>
+            <button type="button" onClick={incrementCount}>
+                {' '}
+                Clicked {count} times
+            </button>
+        </div>
+    );
 }
 
 // const ClickCounter = (props) => {
