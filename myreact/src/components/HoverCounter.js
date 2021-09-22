@@ -54,10 +54,20 @@
 import React from 'react';
 // import withCounter from './HOC/withConter';
 // eslint-disable-next-line react/prefer-stateless-function
-export default function HoverCounter({ count, incrementCount }) {
+export default function HoverCounter({ count, incrementCount, theme, switchTheme }) {
+    const style =
+        theme === 'dark'
+            ? { backgroundColor: '#000000', color: '#ffffff', textAlign: 'center', padding: '10px' }
+            : null;
     return (
         <div>
-            <h3 onMouseOver={incrementCount}> Hoverd {count} times</h3>
+            <h3 onMouseOver={incrementCount} style={style}>
+                {' '}
+                Hoverd {count} times
+            </h3>
+            <button type="button" onClick={switchTheme}>
+                Change Theme
+            </button>
         </div>
     );
 }
