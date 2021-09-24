@@ -9,11 +9,13 @@ import Bracket from './components/composition/Bracket';
 import Emoji from './components/composition/Emoji';
 import Text from './components/composition/Text';
 import Counter from './components/Counter';
+import Counters from './components/Counters';
 import Form from './components/Form';
 import HoverCounter from './components/HoverCounter';
 import Texts from './components/inheritance/Texts';
 import MouseUp from './components/MouseUp';
 import Section from './components/Section';
+import Todo from './components/Todo';
 import User from './components/User';
 import ThemeContext from './Contexts/themeContext';
 
@@ -95,6 +97,8 @@ export default class App extends React.Component {
                         {' '}
                         <Section />
                     </ThemeContext.Provider>
+                    <Todo />
+                    <Counters />
                 </div>
             </>
         );
