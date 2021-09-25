@@ -14,10 +14,12 @@ import Form from './components/Form';
 import HoverCounter from './components/HoverCounter';
 import Texts from './components/inheritance/Texts';
 import MouseUp from './components/MouseUp';
+import MyComponentClass from './components/MyComponentClass';
 import Section from './components/Section';
 import Todo from './components/Todo';
 import User from './components/User';
 import ThemeContext from './Contexts/themeContext';
+import MyComponent from './MyComponent';
 
 // eslint-disable-next-line react/prefer-stateless-function
 export default class App extends React.Component {
@@ -40,6 +42,7 @@ export default class App extends React.Component {
     render() {
         const { theme } = this.state;
         const quantites = [1, 2, 3, 4, 5];
+        // const [show, setShow] = useState;
         return (
             // <div>
             //    <Clocks locale="bn-BD" />
@@ -99,6 +102,16 @@ export default class App extends React.Component {
                     </ThemeContext.Provider>
                     <Todo />
                     <Counters />
+                    <div>
+                        <p>We shall learn useEffect() today</p>
+                        <MyComponentClass />
+                        <MyComponent />
+                        {/* <p>
+                            <button type="button" onClick={() => setShow((prevShow) => !prevShow)}>
+                                {show ? 'Hide Post' : 'Show Post'}
+                            </button>
+                        </p> */}
+                    </div>
                 </div>
             </>
         );
